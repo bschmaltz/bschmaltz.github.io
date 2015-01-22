@@ -1,0 +1,43 @@
+#page-wrapper{
+  margin: 0 2em !important;
+  margin: auto;
+}
+
+/*desktop banner*/
+@media screen and (min-width : 769px) {
+  #banner{
+    padding: 1em 0 .25em;
+    border-bottom: 1px solid #000;
+  }
+  #nav-list{
+    float: right;
+    padding-top: 2.7em;
+  }
+}
+
+/*mobile banner*/
+@media screen and (max-width : 768px) {
+  #banner{
+    text-align: center;
+    padding: 1em 0 .25em;
+    border-bottom: 1px solid #000;
+  }
+  #nav-list{
+    float: none;
+    padding-right: 50px;
+    padding-top: 0.5em;
+  }
+}
+
+
+#nav-list a{
+  text-decoration: none;
+  color: #224A93;
+}
+#nav-list .active{
+  font-weight: bold;
+}
+.nav-element{
+  display: inline;
+  padding: 0 0 0 1em;
+}

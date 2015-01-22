@@ -3,6 +3,7 @@
   margin: auto;
 }
 
+/*HEADER*/
 /*desktop banner*/
 @media screen and (min-width : 769px) {
   #banner{
@@ -27,9 +28,10 @@
     padding-left: 0px;
     padding-top: 0.5em;
   }
+  #first-nav-element{
+    padding: 0;
+  }
 }
-
-
 #nav-list a{
   text-decoration: none;
   color: #224A93;
@@ -40,4 +42,19 @@
 .nav-element{
   display: inline;
   padding: 0 0 0 1em;
+}
+
+
+/*CONTENT*/
+.content-header{
+  text-align: center;
+}
+
+
+/* PROJECT PAGE */
+.project-image{
+  width:100%;
+}
+.project-name{
+  margin-top: 50px;
 }

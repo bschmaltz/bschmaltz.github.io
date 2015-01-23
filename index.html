@@ -36,11 +36,10 @@
       <!-- content start -->
       <h2 class="content-header">Here are some projects I enjoyed making.</h2>
       <div class="project">
-
         <h3 class="project-name">passBy</h3>
         <div class="row">
           <div class="col-sm-8">
-            <p>This is a web app that I recently created using <b>AngularJS</b>. It essentially lets you input a route into Google Maps, and then, it searches along that route for highly rated Google Places.  Finally, your route is shown along with the highly rated results, and you can asynchronously add these results to your route.</p>
+            <p>This is a web app that I recently created using <b>AngularJS</b>. It essentially lets you input a route into Google Maps, and then, it searches along that route for highly rated Google Places.  Finally, your route is shown with the highly rated results, and you can asynchronously add these results to your route.</p>
 
             <p>This was primarily just a proof of concept.  For the searches along the route, you could easily switch out or add any GPS search based API. Google Places limited me to 10 searches at a time, so the results can be hit or miss.</p>
 
@@ -68,7 +67,7 @@
             
             <p>And yes, I know "Reveal" is the cheesiest name I could have used.</p>
 
-            <p>There are some technical details worth mentioning.  This app has two parts. A <b>Rails</b> back-end that serves as a <b>RESTful API</b>, and a front-end Rails <b>mobile web app</b>.  Some notable features I learned to implement were: one way hashing of passwords, image uploading for profile pics, and notification polling.</p>
+            <p>There are some technical details worth mentioning.  This app is comprised of two parts. A <b>Rails</b> back-end that serves as a <b>RESTful API</b>, and a front-end Rails <b>mobile web app</b>.  Some notable features I learned to implement were: one way hashing of passwords, image uploading for profile pics, and notification polling.</p>
             <div>
               <a href="https://reveal-mobile.herokuapp.com/#/" target="blank">Try it out</a>. Note, the feeds could be empty because they are location and/or time sensitive.
             </div>
@@ -96,13 +95,13 @@
           <div class="col-sm-8">
             <p>While working at Career Builder (CB), in my spare time, I made this web app that allows people with <a href="http://www.deskcycle.com/" target="blank">desk cycles</a> to race one another in Google Street View.
 
-            <p>A coworker handled the interface for sending POST request of the estimated distance traveled on the desk cycle. This interface consisted simply of an AUX cable from the desk cycle to a Rasberry Pi and a USB cable from the Rasberry Pi to the desktop.  On a set interval, the resitance would be measured and used to roughly estimate the distance traveled. The racer would then be moved by that distance on a predetermined route (no steering needed).</p>
+            <p>A coworker handled the interface (a Raspberry Pi measuring the cycle's resistance via AUX cable) for sending POST requests with the estimated distance of the cycle.  My app would then move the racer by that distance on a predetermined route (no steering needed).</p>
 
-            <p>Overall, the web app is very similar to an online video game.  There are multiple user created lobbies, and these lobbies have a cyclical flow: pre-race, racing, and post-race.  When you join a lobby, everything is updated in realtime via <b>websockets</b>.  Racers move as markers in street view and on the normal map.  Additionally, you can chat (talk trash) with the other racers.  Lastly, users have stats that are shown and/or charted at the end of the race and on their profile.</p> 
+            <p>Overall, the web app is very similar to an online video game.  There are multiple user created lobbies, and these lobbies have a cyclical flow: pre-race, racing, and post-race.  When you join a lobby, everything is updated in realtime via <b>websockets</b>.  Racers move as markers in street view and on a normal map.  Additionally, you can chat (a nicer way of saying talk trash) with the other racers.  Lastly, users have stats that are shown and/or charted at the end of the race and on their profile.</p> 
 
             <p>This <b>Rails web app</b> was a lot of fun to work on, but also, it was a very good way to learn how to use websockets.</p>
             <div>
-              <a href="https://tour-de-cb.herokuapp.com/#/" target="blank">Try it out</a>. The racing is in debug mode, so you can just put a number in the textbox under the minimap and click submit.
+              <a href="https://tour-de-cb.herokuapp.com/#/" target="blank">Try it out</a>. The racing is in debug mode, so you can just put a number of meters you want to move in the textbox under the minimap and click submit.
             </div>
             <div>
               <a href="https://github.com/bschmaltz/tour_de_cb" target="blank">Source code</a>
@@ -116,7 +115,7 @@
               <img class="hide" src="img/tdcb-screenshot2.png"></img>
             </a>
             <a href="img/tdcb-screenshot3.png" data-lightbox="tour-de-cb-imageset" data-title="Racing!">
-              <img class="project-image-tall" src="img/tdcb-screenshot3.png"></img>
+              <img class="project-image-wide" src="img/tdcb-screenshot3.png"></img>
             </a>
             <a href="img/tdcb-screenshot4.png" data-lightbox="tour-de-cb-imageset" data-title="While racing, hit the spacebar to see the entire map.">
               <img class="hide" src="img/tdcb-screenshot4.png"></img>
@@ -129,6 +128,45 @@
             </a>
             <a href="img/tdcb-screenshot7.png" data-lightbox="tour-de-cb-imageset" data-title="My profile">
               <img class="hide" src="img/tdcb-screenshot7.png"></img>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3 class="project-name">c-p2p-chat</h3>
+        <div class="row">
+          <div class="col-sm-8">
+            <p>c-p2p-chat is a peer-to-peer chat program writtin in C, and you can run it in the terminal.  It certainly isn't as flashy as the previous projects, but this lower level programming was no less interesting to me.</p>
+
+            <p>This project was a group final project for my Networking I class.  We were given complete freedom in how we designed the protocol and implemented it. However, there were very few to no resources explaining any approach, which made it all the more rewarding in the end.</p>
+
+            <div>
+              <a href="https://drive.google.com/folderview?id=0BwJrbdYDeYwHfktzYURlVjRvckY3TUNZS0VVNUJ3ZVZHaUkwQkE4THB2S0pVVmVSRXZMaGM&usp=sharing" target="blank">Protocal documentation</a>
+            </div>
+            <div>
+              <a href="https://github.com/bschmaltz/c-p2p-chat" target="blank">Source code</a>  I was responsible for all of the tracker code (tracker.c).
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="img/p2p-screenshot1.png" data-lightbox="p2p-imageset" data-title="Starting up the tracker.">
+              <img class="project-image-wide" src="img/p2p-screenshot1.png"></img>
+            </a>
+            <a href="img/p2p-screenshot2.png" data-lightbox="p2p-imageset" data-title="Peer 1 connects and creates room 1.">
+              <img class="hide" src="img/p2p-screenshot2.png"></img>
+            </a>
+            <a href="img/p2p-screenshot3.png" data-lightbox="p2p-imageset" data-title="Peer 2 connects, lists the rooms, joins room 1, and annoys peer 1">
+              <img class="hide" src="img/p2p-screenshot3.png"></img>
+            </a>
+            <a href="img/p2p-screenshot4.png" data-lightbox="p2p-imageset" data-title="Peer 1 replies, leaves room 1, and creates room 2">
+              <img class="hide" src="img/p2p-screenshot4.png"></img>
+            </a>
+            <a href="img/p2p-screenshot5.png" data-lightbox="p2p-imageset" data-title="Peer 2 lists the rooms, joins room 2, and annoys peer 1 again.">
+              <img class="hide" src="img/p2p-screenshot5.png"></img>
+            </a>
+            <a href="img/p2p-screenshot6.png" data-lightbox="p2p-imageset" data-title="Peer 1 terminates the program, and the tracker's pings account for it.">
+              <img class="hide" src="img/p2p-screenshot6.png"></img>
             </a>
           </div>
         </div>

@@ -34,26 +34,102 @@
       </div>
       <!-- header end -->
       <!-- content start -->
-      <h2 class="content-header">Here are some projects I've created</h2>
+      <h2 class="content-header">Here are some projects I enjoyed making.</h2>
       <div class="project">
+
         <h3 class="project-name">passBy</h3>
         <div class="row">
-          <div class="col-sm-4">
-            <a href="img/pass-by-screenshot.png" data-lightbox="image-1" data-title="passBy Atlanta to D.C.">
-              <img class="project-image" src="img/pass-by-screenshot.png"></img>
-            </a>
-          </div>
           <div class="col-sm-8">
-            <p>This is a web app that I recently created using <b>AngularJS</b>. It essentially lets you input a route into Google Maps, and then, it searches along that route for highly rated Google Places.  Finally, your route is shown along with the highly rated results, and you can asynchronously add these results to the route.</p>
+            <p>This is a web app that I recently created using <b>AngularJS</b>. It essentially lets you input a route into Google Maps, and then, it searches along that route for highly rated Google Places.  Finally, your route is shown along with the highly rated results, and you can asynchronously add these results to your route.</p>
 
             <p>This was primarily just a proof of concept.  For the searches along the route, you could easily switch out or add any GPS search based API. Google Places limited me to 10 searches at a time, so the results can be hit or miss.</p>
 
             <div>
-              <a href="https://pass-by.herokuapp.com/#/" target="blank">Try it out!</a>
+              <a href="https://pass-by.herokuapp.com/#/" target="blank">Try it out (for desktop)</a>
             </div>
             <div>
               <a href="https://github.com/bschmaltz/pass-by" target="blank">Source code</a>
             </div>
+          </div>
+
+          <div class="col-sm-4">
+            <a href="img/pass-by-screenshot.png" data-lightbox="image-1" data-title="passBy Atlanta to D.C.">
+              <img class="project-image-wide" src="img/pass-by-screenshot.png"></img>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3 class="project-name">Reveal</h3>
+        <div class="row">
+          <div class="col-sm-8">
+            <p>Reveal is a spin-off recently trending anonymous (gps based) social media apps.  It allows users to create a post anonymously, and other people in the general area can rate the post.  The twist is the original poster can reveal that he/she was the one that made the post.</p>
+            
+            <p>And yes, I know "Reveal" is the cheesiest name I could have used.</p>
+
+            <p>There are some technical details worth mentioning.  This app has two parts. A <b>Rails</b> back-end that serves as a <b>RESTful API</b>, and a front-end Rails <b>mobile web app</b>.  Some notable features I learned to implement were: one way hashing of passwords, image uploading for profile pics, and notification polling.</p>
+            <div>
+              <a href="https://reveal-mobile.herokuapp.com/#/" target="blank">Try it out</a>. Note, the feeds could be empty because they are location and/or time sensitive.
+            </div>
+            <div>
+              <a href="https://github.com/bschmaltz/reveal-api" target="blank">Back-end source code</a>
+            </div>
+            <div>
+              <a href="https://drive.google.com/folderview?id=0BwJrbdYDeYwHfi1pcnczTHFZRnlTV0ZjdDFpdll2UEsxTW5wb3I0aGF2SE4za29uNGRYSkE&usp=sharing" target="blank">Back-end API documentation</a>
+            </div>
+            <div>
+              <a href="https://github.com/bschmaltz/reveal" target="blank">Front-end source code</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <a href="img/reveal-screenshot.png" data-lightbox="image-2" data-title="Reveal's local feed">
+              <img class="project-image-tall" src="img/reveal-screenshot.png"></img>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <h3 class="project-name">Tour de CB</h3>
+        <div class="row">
+          <div class="col-sm-8">
+            <p>While working at Career Builder (CB), in my spare time, I made this web app that allows people with <a href="http://www.deskcycle.com/" target="blank">desk cycles</a> to race one another in Google Street View.
+
+            <p>A coworker handled the interface for sending POST request of the estimated distance traveled on the desk cycle. This interface consisted simply of an AUX cable from the desk cycle to a Rasberry Pi and a USB cable from the Rasberry Pi to the desktop.  On a set interval, the resitance would be measured and used to roughly estimate the distance traveled. The racer would then be moved by that distance on a predetermined route (no steering needed).</p>
+
+            <p>Overall, the web app is very similar to an online video game.  There are multiple user created lobbies, and these lobbies have a cyclical flow: pre-race, racing, and post-race.  When you join a lobby, everything is updated in realtime via <b>websockets</b>.  Racers move as markers in street view and on the normal map.  Additionally, you can chat (talk trash) with the other racers.  Lastly, users have stats that are shown and/or charted at the end of the race and on their profile.</p> 
+
+            <p>This <b>Rails web app</b> was a lot of fun to work on, but also, it was a very good way to learn how to use websockets.</p>
+            <div>
+              <a href="https://tour-de-cb.herokuapp.com/#/" target="blank">Try it out</a>. The racing is in debug mode, so you can just put a number in the textbox under the minimap and click submit.
+            </div>
+            <div>
+              <a href="https://github.com/bschmaltz/tour_de_cb" target="blank">Source code</a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <a href="img/tdcb-screenshot1.png" data-lightbox="tour-de-cb-imageset" data-title="Creating a lobby">
+              <img class="hide" src="img/tdcb-screenshot1.png"></img>
+            </a>
+            <a href="img/tdcb-screenshot2.png" data-lightbox="tour-de-cb-imageset" data-title="Pre-race, waiting for players">
+              <img class="hide" src="img/tdcb-screenshot2.png"></img>
+            </a>
+            <a href="img/tdcb-screenshot3.png" data-lightbox="tour-de-cb-imageset" data-title="Racing!">
+              <img class="project-image-tall" src="img/tdcb-screenshot3.png"></img>
+            </a>
+            <a href="img/tdcb-screenshot4.png" data-lightbox="tour-de-cb-imageset" data-title="While racing, hit the spacebar to see the entire map.">
+              <img class="hide" src="img/tdcb-screenshot4.png"></img>
+            </a>
+            <a href="img/tdcb-screenshot5.png" data-lightbox="tour-de-cb-imageset" data-title="I finished. Here are my stats.">
+              <img class="hide" src="img/tdcb-screenshot5.png"></img>
+            </a>
+            <a href="img/tdcb-screenshot6.png" data-lightbox="tour-de-cb-imageset" data-title="Post-race stats, I won!">
+              <img class="hide" src="img/tdcb-screenshot6.png"></img>
+            </a>
+            <a href="img/tdcb-screenshot7.png" data-lightbox="tour-de-cb-imageset" data-title="My profile">
+              <img class="hide" src="img/tdcb-screenshot7.png"></img>
+            </a>
           </div>
         </div>
       </div>

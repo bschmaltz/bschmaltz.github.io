@@ -77,3 +77,36 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/*RESUME PAGE*/
+.work-exp{
+  margin-bottom: 20px;
+}
+.work-exp-company{
+  margin-bottom: 0px;
+}
+.work-exp-title{
+  margin-bottom: 0px;
+}
+.work-exp-list{
+  padding-left: 20px;
+}
+.resume{
+  margin-bottom: 50px;
+}
+/*desktop resume*/
+@media screen and (min-width : 769px) {
+  .resume{
+    width: 605px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*mobile resume*/
+@media screen and (max-width : 768px) {
+  .resume{
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

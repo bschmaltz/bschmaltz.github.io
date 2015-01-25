@@ -3,7 +3,12 @@
   margin: auto;
   margin-bottom: 50px;
 }
-
+.header-name{
+  padding-left: 0px;
+}
+.main-nav{
+  padding-right: 0px;
+}
 /*HEADER*/
 /*desktop banner*/
 @media screen and (min-width : 769px) {
@@ -14,6 +19,14 @@
   #nav-list{
     float: right;
     padding-top: 2.7em;
+  }
+}
+
+@media screen and (min-width : 992px) {
+  #banner{
+    width: 972px;
+    margin-left:  auto;
+    margin-right: auto;
   }
 }
 
@@ -58,6 +71,22 @@
 /* PROJECT PAGE */
 .project{
   margin-bottom: 50px;
+}
+/*desktop portfolio*/
+@media screen and (min-width : 992px) {
+  .portfolio{
+    width: 972px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*mobile portfolio*/
+@media screen and (max-width : 992px) {
+  .portfolio{
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 .project-image-wide{
   width:100%;
